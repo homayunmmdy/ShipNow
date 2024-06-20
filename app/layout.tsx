@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import SiteConfig from "@/app/config/site";
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
   title: SiteConfig.name,
@@ -10,6 +11,9 @@ export const metadata: Metadata = {
   keywords: SiteConfig.keywords,
   robots: SiteConfig.robots,
   authors: SiteConfig.authors,
+  verification: {
+    google: "gTVvXWgVqXKU6AfSRkuQa4O39VGzRS9zcA4y9eT3uUo",
+  },
   openGraph: {
     title: SiteConfig.name,
     description: SiteConfig.description.slice(0, 160),
@@ -45,6 +49,7 @@ export default function RootLayout({
       <body className={`${roboto.className} font-normal`}>
         <h1 className="hidden">{SiteConfig.name}</h1>
         {children}
+        <Analytics />
       </body>
     </html>
   );

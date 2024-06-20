@@ -1,4 +1,4 @@
-Sitemap: https://shipnow.vercel.app/sitemap.xml
+Sitemap: https://shipnowproject.vercel.app/sitemap.xml
 
 User-agent: *
 Disallow: /private/

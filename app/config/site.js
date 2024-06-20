@@ -5,12 +5,12 @@ const SiteConfig = {
     "With ShipNow you can buil your dream project now. with lot's of ready components , section , hooks and more..",
   lang: "en",
   dir: "ltr",
-  siteURL: "https://shipnow.vercel.app",
+  siteURL: "https://shipnowproject.vercel.app/",
   keywords: "admin , shipnow ,  project , start now",
   robots: "index , follow",
   author: "ShipNow Team",
   authorID: "ShipNow_Team",
-  authors: [{ name: "ShipNow Team", url: "https://shipnow.vercel.app" }],
+  authors: [{ name: "ShipNow Team", url: "https://shipnowproject.vercel.app/" }],
 };
 
 export default SiteConfig;
