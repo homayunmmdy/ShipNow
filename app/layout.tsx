@@ -4,7 +4,7 @@ import "./globals.css";
 import SiteConfig from "@/app/config/site";
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 import { Analytics } from '@vercel/analytics/react'
-import { Footer, Navbar } from "./components";
+import { Footer, Navbar } from "./components/layouts";
 
 export const metadata: Metadata = {
   title: SiteConfig.name,

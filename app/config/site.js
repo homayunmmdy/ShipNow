@@ -21,8 +21,8 @@ const SiteConfig = {
     },
     {
       id: 2,
-      name: " FAQ",
-      link: "/FAQ",
+      name: " FAQs",
+      link: "/FAQs",
     },
     {
       id: 3,

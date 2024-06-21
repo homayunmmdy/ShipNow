@@ -1,5 +1,5 @@
 import React from "react";
-import { CTA, Companies, Customers, FQA, Hero, Price } from "./components";
+import { CTA, Companies, Customers, FQA, Hero, Price } from "./components/sections";
 
 const Home = () => {
   return (

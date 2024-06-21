@@ -90,7 +90,6 @@ const FQA = () => {
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
