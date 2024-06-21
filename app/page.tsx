@@ -1,10 +1,11 @@
 import React from "react";
-import { CTA, Hero } from "./components";
+import { CTA, FQA, Hero } from "./components";
 
 const Home = () => {
   return (
     <>
       <Hero />
+      <FQA />
       <CTA />
     </>
   );
