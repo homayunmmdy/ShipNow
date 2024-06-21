@@ -5,7 +5,7 @@ import React from 'react'
 const CTA = () => {
     return (
         <>
-            <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 py-3">
+            <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 py-5">
                 <div className="relative isolate overflow-hidden bg-blue-800 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
                     <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">Unlock the Power
                         of Full Controll on Your website</h2>
@@ -21,8 +21,8 @@ const CTA = () => {
                         <defs>
                             <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
                                 gradientTransform="translate(512 512) rotate(90) scale(512)">
-                                <stop stop-color="#7775D6"></stop>
-                                <stop offset="1" stop-color="#E935C1" stopOpacity="0"></stop>
+                                <stop stopColor="#7775D6"></stop>
+                                <stop offset="1" stopColor="#E935C1" stopOpacity="0"></stop>
                             </radialGradient>
                         </defs>
                     </svg>

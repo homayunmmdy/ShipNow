@@ -1,5 +1,5 @@
 import React from "react";
-import { CTA, Companies, Customers, FQA, Hero } from "./components";
+import { CTA, Companies, Customers, FQA, Hero, Price } from "./components";
 
 const Home = () => {
   return (
@@ -8,6 +8,7 @@ const Home = () => {
       <Companies />
       <FQA />
       <Customers />
+      <Price />
       <CTA />
     </>
   );

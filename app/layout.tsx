@@ -4,6 +4,7 @@ import "./globals.css";
 import SiteConfig from "@/app/config/site";
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 import { Analytics } from '@vercel/analytics/react'
+import { Footer, Navbar } from "./components";
 
 export const metadata: Metadata = {
   title: SiteConfig.name,
@@ -48,8 +49,10 @@ export default function RootLayout({
     <html lang={SiteConfig.lang} dir={SiteConfig.dir}>
       <body className={`${roboto.className} font-normal`}>
         <h1 className="hidden">{SiteConfig.name}</h1>
+        <Navbar />
         {children}
         <Analytics />
+        <Footer />
       </body>
     </html>
   );
