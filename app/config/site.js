@@ -13,26 +13,31 @@ const SiteConfig = {
   authors: [
     { name: "ShipNow Team", url: "https://shipnowproject.vercel.app/" },
   ],
+  whatsAppAddress: "https://api.whatsapp.com/send?phone=09224003487",
   nav: [
     {
       id: 1,
       name: "Home",
       link: "/",
+      rel: "follow",
     },
     {
       id: 2,
       name: " FAQs",
       link: "/FAQs",
+      rel: "nofollow",
     },
     {
       id: 3,
       name: " Privacy Policy",
       link: "/privacy_policy",
+      rel: "nofollow",
     },
     {
       id: 4,
       name: "Contacts",
       link: "/contacts",
+      rel: "nofollow",
     },
   ],
 };

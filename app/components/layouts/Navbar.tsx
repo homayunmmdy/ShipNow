@@ -9,7 +9,7 @@ const Navbar = () => {
     const nav = SiteConfig.nav;
     return (
         <>
-            <div className="navbar bg-base-100">
+            <div className="navbar mx-auto  max-w-7xl">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -19,8 +19,8 @@ const Navbar = () => {
                             {nav?.map((item) => {
                                 return (
                                     <li key={item.id} className="mx-1">
-                                        {pathname === item.link ? <Link href={item.link} className="bg-blue-700 hover:bg-blue-700 text-white rounded-xl">{item.name}</Link> :
-                                            <Link href={item.link}>{item.name}</Link>}
+                                        {pathname === item.link ? <Link rel={item.rel} href={item.link} className="bg-blue-700 hover:bg-blue-700 text-white rounded-xl">{item.name}</Link> :
+                                            <Link rel={item.rel} href={item.link}>{item.name}</Link>}
                                     </li>
                                 )
                             })}
@@ -33,8 +33,8 @@ const Navbar = () => {
                         {nav?.map((item) => {
                             return (
                                 <li key={item.id} className="mx-1">
-                                    {pathname == item.link ? <Link href={item.link} className="bg-blue-700 hover:bg-blue-700 text-white rounded-xl">{item.name}</Link> :
-                                        <Link className="hover:bg-base-100 border-2 border-base-100 hover:text-blue-700 hover:border-blue-700 rounded-xl" href={item.link}>{item.name}</Link>}
+                                    {pathname == item.link ? <Link rel={item.rel} href={item.link} className="bg-blue-700 hover:bg-blue-700 text-white rounded-xl">{item.name}</Link> :
+                                        <Link rel={item.rel} className="hover:bg-base-100 border-2 border-base-100 hover:text-blue-700 hover:border-blue-700 rounded-xl" href={item.link}>{item.name}</Link>}
                                 </li>
                             )
                         })}

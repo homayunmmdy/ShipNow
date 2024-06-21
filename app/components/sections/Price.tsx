@@ -1,3 +1,5 @@
+import SiteConfig from "@/app/config/site";
+import Link from "next/link";
 import React from "react";
 
 const Price = () => {
@@ -6,11 +8,11 @@ const Price = () => {
       <div className="mx-auto max-w-7xl px-4">
         <div className="grid lg:grid-cols-2 px-8 gap-10 text-zinc-800 mt-10">
           <div className="flex flex-col items-center   ">
-            <div className="bg-slate-100 w-2/3 p-8 rounded-lg shadow-lg">
+            <div className="bg-slate-100 w-full md:w-2/3 p-8 rounded-lg shadow-lg">
               <div>
-                <h2 className="font-extrabold text-3xl text-center mb-2">
+                <h3 className="font-extrabold text-3xl text-center mb-2">
                   Starter
-                </h2>
+                </h3>
                 <div className="flex flex-col items-center my-8">
                   <p className="font-extrabold text-4xl">$99</p>
                   <p className="text-sm opacity-60">/life time</p>
@@ -143,15 +145,18 @@ const Price = () => {
                   Basic Support
                 </p>
                 <div className="flex justify-center mt-8 ">
-                  <button className=" px-4 py-2 border-violet-400 border-4 hover:bg-violet-100 rounded-xl">
+                  <Link
+                    href={SiteConfig.whatsAppAddress}
+                    className=" px-4 py-2 border-violet-400 border-4 hover:bg-violet-100 rounded-xl"
+                  >
                     Get Started
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
           <div className="flex flex-col items-center  ">
-            <div className="w-2/3 bg-gradient-to-br from-blue-100 via-orange-100 to-purple-100 p-8 rounded-lg shadow-lg relative border-8 border-orange-200">
+            <div className="w-full md:w-2/3 bg-gradient-to-br from-blue-100 via-orange-100 to-purple-100 p-8 rounded-lg shadow-lg relative border-8 border-orange-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -170,7 +175,7 @@ const Price = () => {
               </p>
               <div>
                 <div className="flex gap-4 justify-center">
-                  <p className="font-extrabold text-3xl mb-2">Pro</p>
+                  <h3 className="font-extrabold text-3xl mb-2">Pro</h3>
                 </div>
                 <p className="opacity-60 text-center"></p>
                 <div className="flex gap-4 justify-center">
@@ -258,7 +263,7 @@ const Price = () => {
                   </svg>
                   <b>Components & animations</b>
                 </p>
-          
+
                 <p className="flex items-center text-sm">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -308,9 +313,12 @@ const Price = () => {
                   Premium Support
                 </p>
                 <div className="flex justify-center mt-8">
-                  <button className="px-4 py-2 border-violet-400 border-4 hover:bg-violet-100 rounded-xl">
+                  <Link
+                    href={SiteConfig.whatsAppAddress}
+                    className="px-4 py-2 border-violet-400 border-4 hover:bg-violet-100 rounded-xl"
+                  >
                     Get Started
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
