@@ -22,7 +22,7 @@ const CTA = () => {
                             <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
                                 gradientTransform="translate(512 512) rotate(90) scale(512)">
                                 <stop stop-color="#7775D6"></stop>
-                                <stop offset="1" stop-color="#E935C1" stop-opacity="0"></stop>
+                                <stop offset="1" stop-color="#E935C1" stopOpacity="0"></stop>
                             </radialGradient>
                         </defs>
                     </svg>
